@@ -1,8 +1,16 @@
-# React + Vite
+# Lista Livros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto criado para a disciplina Projeto de Bloco: Desenvolvimento Front-end com Frameworks [23E4_5].
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Node.js (https://nodejs.org/)
+NPM (https://npmjs.com/)
+
+
+```bash
+git clone https://seurepositorio.com/projeto.git
+cd projeto
+npm install
+npm run dev
+
