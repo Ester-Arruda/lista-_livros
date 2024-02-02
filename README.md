@@ -9,8 +9,8 @@ NPM (https://npmjs.com/)
 
 
 ```bash
-git clone https://seurepositorio.com/projeto.git
-cd projeto
+git clone https://github.com/Ester-Arruda/lista-_livros.git
+cd lista-livros
 npm install
 npm run dev
 
