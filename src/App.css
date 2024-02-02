@@ -1,0 +1,9 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: revert !important;
+    place-items: revert !important;
+    min-width: revert !important;
+    min-height: revert !important;
+    width: 100% !important;
+}

@@ -1,0 +1,8 @@
+ul {
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 104px;
+    gap: 24px !important;
+    width: 100% !important;
+    overflow-y: auto !important;
+    justify-items: center;
+}

@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    background-color: bisque;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+.d_flex {
+    display: flex;
+}
+
+input {
+    height: 30px;
+    border-right: none;
+    width: 300px;
+    border-radius: 8px 0 0 8px ;
+}
+
+.icon_search {
+    background-color: white;
+    height: 32px !important;
+    width: 40px !important;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 8px 8px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container_input {
+    display: flex;
+    align-items: center;
+}
+
+.logo_icon {
+    width: 55px !important;
+    height: 55px !important;
+}
+
+.icon_login {
+    height: 40px !important;
+    width: 40px !important;
+}
