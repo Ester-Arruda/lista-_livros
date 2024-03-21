@@ -12,7 +12,7 @@ export default function BookListPage({ termFilter }) {
         try {
             const response = await fetch(uri);
             const booksResponse = await response.json();
-            const arrayBooks = Object.keys(booksResponse).map(key => ({
+            const arrayBooks = Object.keys(booksResponse).map(key => ({ 
                 id: key,
                 ...booksResponse[key]
             }));
@@ -45,8 +45,7 @@ export default function BookListPage({ termFilter }) {
     return (
         <>
             <BookList books={books}/>
-            {books.length === 0 && <p>A pesquisa não retornou nenhum resultado</p>}
-
+            {filterWord && books.length === 0 && <p data-cy="msgFilter">A pesquisa não retornou nenhum resultado</p>}
         </>
     );
 }

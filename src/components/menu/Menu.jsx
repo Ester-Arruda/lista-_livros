@@ -20,7 +20,7 @@ export default function Menu({actionFilterBook}) {
             <h1>Bookers</h1>
         </div>
         <div className={styles.container_input}>
-            <input placeholder='Busque um livro' value={searchTerm} onChange={handleInputChange}/>
+            <input placeholder='Busque um livro' value={searchTerm} onChange={handleInputChange} data-cy="search"/>
             <SearchIcon className={styles.icon_search}/>
         </div>
         <div className={styles.logo}>

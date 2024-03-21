@@ -14,9 +14,9 @@ export default function CardBook({book}) {
                 component="img"
                 image={book.cover}
                 />
-                <CardContent >
-                    <Typography gutterBottom variant="h5" component="div">
-                        {book.title}
+                <CardContent data-cy="book-info">
+                    <Typography gutterBottom variant="h5">
+                        Nome: {book.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Autor: {book.author}
