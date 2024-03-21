@@ -5,16 +5,9 @@ import styles from './BookList.module.css'
 
 // const theme = createTheme()
 export default function BookList({books}) {
-    const arrayBooks = Object.keys(books).map(key => {
-        return {
-            id: key,
-            ...books[key]
-        };
-    });
-
     return (
       <ImageList cols={6} rowHeight={800}>
-        {arrayBooks.map((item) => (
+        {books.map((item) => (
           <ImageListItem key={item.id}>
             <CardBook book={item}/>
           </ImageListItem>

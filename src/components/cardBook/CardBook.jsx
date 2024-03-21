@@ -16,7 +16,7 @@ export default function CardBook({book}) {
                 />
                 <CardContent >
                     <Typography gutterBottom variant="h5" component="div">
-                        Nome: {book.title}
+                        {book.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Autor: {book.author}

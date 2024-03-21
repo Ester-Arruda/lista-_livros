@@ -2,8 +2,16 @@ import styles from './Menu.module.css'
 import SearchIcon from '@mui/icons-material/Search';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useState } from 'react';
 
-export default function Menu() {
+export default function Menu({actionFilterBook}) {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleInputChange = (evt) => {
+    setSearchTerm(evt.target.value);
+    actionFilterBook(evt.target.value);
+  };
+
   return (
     <div className={styles.navbar}>
       <nav className={styles.container}>
@@ -12,7 +20,7 @@ export default function Menu() {
             <h1>Bookers</h1>
         </div>
         <div className={styles.container_input}>
-            <input placeholder='Busque um livro'/>
+            <input placeholder='Busque um livro' value={searchTerm} onChange={handleInputChange}/>
             <SearchIcon className={styles.icon_search}/>
         </div>
         <div className={styles.logo}>
